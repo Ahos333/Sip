@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+:root {
+	--primary: #2A4148;
+	--secondary: #4C6265;
+	--tertiary: #83B3B9;
+	--light: #E1E6E5;
+	--dark: #1E1E1E;
+	--overlay: rgba(0, 0, 0, 0.4);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Antic Slab', serif;
+	/* font-family: "Open Sans"; */
+	color: #fff;
+}
+
+h1 {
+	font-size: 1.7rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.7rem;
+}
+
+h6 {
+	font-size: 0.5rem;
+}
+
+
+/*  
+
+body > .page-wrapper {
+	background-color: #000000;
+}
+
+*/
+
+a {
+	text-decoration: none;
+	
+}
+
+footer {
+	background-color: var(--dark);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: var(--light);
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}
+
+.footer-container {
+	width: calc(100vw - 10%);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.footer-container, .footer-menu, .footer-options, 
+.footer-logo {
+	text-align: center;
+}
+
+.footer-menu, .footer-options {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.3rem;
+}
+
+.footer-menu li {
+	font-size: 0.7rem;
+	margin-right: 1rem;
+}
+
+.footer-options, .social-media, .bottom-footer {
+	flex: 1;
+}
+
+.lang-change {
+	background-color: var(--dark);
+	outline: none;
+	border: none;
+}
+
+.lang-change option {
+	
+}
+
+
+.social-media {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	color: #fff;
+}
+
+.social-media li a {
+	margin-right: 1rem;
+	color: #fff;
+	font-size: 1rem;
+	transition: 0.3s ease-in;
+}
+
+.social-media li a:hover {
+	color: var(--primary);
+}
+
+.bottom-footer a, .bottom-footer .website {
+	text-align: center;
+}
+
+.bottom-footer a {
+	text-transform: capitalize;	
+	font-size: 0.9rem;
+}
+
+/* <footer id="footer">
+	<div class="footer-container">
+		<div class="logo">
+			<a href="index.html" class="branding">Sip</a>
+		</div>
+		<ul class="footer-menu">
+			<li>Terms of Service</li>
+			<li>Privacy Policy</li>
+			<li>Security</li>
+			<li>Sitemap</li>
+		</ul>
+		<ul class="footer-menu">
+			<select class="lang-change">
+				<option value="english">English</option>
+				<option value="japanese">Japanese</option>
+				<option value="spanish">Spanish</option>
+			</select>
+			<ul class="social-media">
+				<li><a class="fab fa-twitter" href="https://www.twitter.com"></a></li>
+     			<li><a class="fab fa-instagram fa-2x" href="https://www.instagram.com"></a></li>
+				<li><a class="fab fa-facebook fa-2x" href="https://www.facebook.com"></a></li>
+      		<li><a class="fab fa-linkedin fa-2x" href="https://www.linkedin.com"></a></li>
+			</ul>
+			<div class="bottom-footer">
+	<h2>&copy; 2019 | Created & Designed By <a class="website" href="https://ahos333.github.io/">Angelica Hoskins</a></h2>
+			</div>
+		</ul>
+		
+	</div>
+</footer>
+
+ */
+
+
+/*  
+.page-loader {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+}
+
+.shaker {
+	transform: translate(-50%,50%) rotate(45deg);
+	width: 50px;
+	height: 100px;
+	border: 1px solid var(--dark);
+}
+
+.shaker::before, .shaker::after {
+	content: '';
+}
+
+@keyframes shake {
+	from {
+	
+	}
+	
+	to {
+		
+	}
+}
+
+*/
