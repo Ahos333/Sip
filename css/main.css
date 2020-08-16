@@ -13,7 +13,6 @@
 	--tertiary: #83B3B9;
 	--light: #E1E6E5;
 	--dark: #1E1E1E;
-	--overlay: rgba(0, 0, 0, 0.4);
 }
 
 html, body {
@@ -73,7 +72,7 @@ footer {
 	padding: 0;
 	color: var(--light);
 	font-size: 1.2rem;
-	padding: 0.5rem;
+	padding: 1rem;
 }
 
 .footer-container {
@@ -87,31 +86,39 @@ footer {
 .footer-container, .footer-menu, .footer-options, 
 .footer-logo {
 	text-align: center;
+	font-size: 0.8rem;
 }
 
-.footer-menu, .footer-options {
+.footer-menu {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 0.3rem;
+	padding-top: 1rem;
+}
+
+.footer-options {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .footer-menu li {
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	margin-right: 1rem;
 }
 
-.footer-options, .social-media, .bottom-footer {
-	flex: 1;
+.lang-change, .social-media, .bottom-footer {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-right: 1.5rem;
 }
 
-.lang-change {
+.lang-change, lang-change option {
 	background-color: var(--dark);
+	appearance: none;
 	outline: none;
 	border: none;
-}
-
-.lang-change option {
-	
+	color: var(--dark);
 }
 
 
@@ -134,48 +141,15 @@ footer {
 	color: var(--primary);
 }
 
-.bottom-footer a, .bottom-footer .website {
+.bottom-footer h2, .bottom-footer a, .bottom-footer .website {
+	font-size: 0.7rem;
 	text-align: center;
 }
 
 .bottom-footer a {
 	text-transform: capitalize;	
-	font-size: 0.9rem;
+	
 }
-
-/* <footer id="footer">
-	<div class="footer-container">
-		<div class="logo">
-			<a href="index.html" class="branding">Sip</a>
-		</div>
-		<ul class="footer-menu">
-			<li>Terms of Service</li>
-			<li>Privacy Policy</li>
-			<li>Security</li>
-			<li>Sitemap</li>
-		</ul>
-		<ul class="footer-menu">
-			<select class="lang-change">
-				<option value="english">English</option>
-				<option value="japanese">Japanese</option>
-				<option value="spanish">Spanish</option>
-			</select>
-			<ul class="social-media">
-				<li><a class="fab fa-twitter" href="https://www.twitter.com"></a></li>
-     			<li><a class="fab fa-instagram fa-2x" href="https://www.instagram.com"></a></li>
-				<li><a class="fab fa-facebook fa-2x" href="https://www.facebook.com"></a></li>
-      		<li><a class="fab fa-linkedin fa-2x" href="https://www.linkedin.com"></a></li>
-			</ul>
-			<div class="bottom-footer">
-	<h2>&copy; 2019 | Created & Designed By <a class="website" href="https://ahos333.github.io/">Angelica Hoskins</a></h2>
-			</div>
-		</ul>
-		
-	</div>
-</footer>
-
- */
-
 
 /*  
 .page-loader {
