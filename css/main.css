@@ -28,6 +28,7 @@ body {
 
 h1 {
 	font-size: 1.7rem;
+	font-weight: bold;
 }
 
 h2 {
@@ -37,6 +38,7 @@ h2 {
 
 h3 {
 	font-size: 1.2rem;
+	text-transform: capitalize;
 }
 
 h4 {
@@ -52,17 +54,13 @@ h6 {
 }
 
 
-/*  
 
 body > .page-wrapper {
 	background-color: #000000;
 }
 
-*/
-
 a {
 	text-decoration: none;
-	
 }
 
 footer {

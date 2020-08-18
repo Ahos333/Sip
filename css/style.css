@@ -163,11 +163,29 @@ section {
 .swiper-slide h3 {
 	position: absolute;
 	bottom: 0;
-	left: 45%;
+	text-align: center;
 	background: var(--dark);
 	
 }
- 
+
+/* Ads section */
+/* Ad1 Section */
+.ads-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+
+.ad-left, .ad-right {
+
+}
+
+.ad-left img, .ad-right img {
+	width: 400px;
+	height: 300px;
+	border-radius: 0.6rem;
+}
 
 /* About Us Section */
 .about-container {
@@ -197,6 +215,22 @@ section {
 	line-height: 1.5rem;
 	text-indent: 0.5rem;
 	margin-bottom: 1.5rem;
+}
+
+/* Reviews Section */
+.reviews-container {
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+	margin-left: -150px;
+   margin-top: -150px;
+}
+
+.reviews-slide {
+	background-position: center;
+   background-size: cover;
 }
 
 /* Contact Section */
