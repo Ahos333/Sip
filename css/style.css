@@ -32,10 +32,47 @@
 	display: none;
 }
 
+.show-menu-btn, .hide-menu-btn {
+		display: block;
+	}
+	
+	.menu {
+		position: fixed;
+		width: 300px;
+		height: 500px;
+		background-color: var(--overlay);
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: all 0.3s ease-in;
+		z-index: 111;
+	}
+	
+	.menu-link {
+		display: block;
+		padding: 20px;
+		color: var(--light);
+	}
+	
+	.hide-menu-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		
+	}
+	
+	#chk:checked ~ .menu {
+		right: 0;
+	}
+	
+
 .menu-link {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.2rem;
+	margin-bottom: 30px;
 	padding: 0 10px 10px 10px;
 	transition: all 0.4s ease;
 	color: #fff;
@@ -45,7 +82,9 @@
 	transition: all 0.4s ease-in;
 	font-size: 1.7rem;
 	cursor: pointer;
-	display: none;
+	/* display: none;*/
+	
+	
 }
 
 .show-menu-btn {
@@ -187,6 +226,10 @@ section {
 	border-radius: 0.6rem;
 }
 
+.ad-img {
+	clip-path: polygon(18% 100%, 82% 100%, 100% 0, 0 0);
+}
+
 /* About Us Section */
 .about-container {
 	display: flex;
@@ -197,7 +240,7 @@ section {
 .about-img {
 	width: 90%;
 	height: 300px;
-	border-radius: 50%;
+	border-radius: 0.6rem;
 	background: url('../img/about-us.jpg') no-repeat center center/cover;
 	margin: auto;
 	
@@ -217,8 +260,34 @@ section {
 	margin-bottom: 1.5rem;
 }
 
-/* Reviews Section */
-.reviews-container {
+/* Our Team Section */
+.our-team-section {
+	margin: 1.5rem 0 1.5rem 0;
+}
+
+.team-container {
+	display: grid;
+	grid-template: 400px / repeat(3, 1fr);
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-right: 0.5rem;
+	border-radius: 0.3rem;
+}
+
+.team-member img {
+	width: 70%;
+	height: 30%;
+	box-shadow: 5px 10px var(--tertiary);
+}
+
+
+/* Reviews Section 
+.swiper-container2 {
    width: 300px;
    height: 300px;
    position: absolute;
@@ -228,10 +297,11 @@ section {
    margin-top: -150px;
 }
 
-.reviews-slide {
+.swiper-slide2 {
 	background-position: center;
    background-size: cover;
 }
+*/
 
 /* Contact Section */
 /* Contact Form */
@@ -280,7 +350,7 @@ textarea {
 	margin: 0.5rem 0 1rem 0;
 	outline: none;
 	border: none;
-	padding-left: 0.3rem;
+	padding: 0.5rem;
 }
 
 textarea[type=text] {
@@ -289,7 +359,7 @@ textarea[type=text] {
 }
 
 input:hover, textarea:hover {
-	border-bottom: 3px solid var(--secondary);
+	border-bottom: 0.3rem solid var(--tertiary);
 }
 
 .send-btn {
@@ -380,40 +450,7 @@ input:hover, textarea:hover {
 
 
 @media screen and (max-width:800px) {
-	.show-menu-btn, .hide-menu-btn {
-		display: block;
-	}
 	
-	.menu {
-		position: fixed;
-		width: 300px;
-		height: 500px;
-		background-color: var(--overlay);
-		right: -100%;
-		top: 0;
-		text-align: center;
-		padding: 80px 0;
-		line-height: normal;
-		transition: all 0.3s ease-in;
-		z-index: 111;
-	}
-	
-	.menu-link {
-		display: block;
-		padding: 20px;
-		color: var(--light);
-	}
-	
-	.hide-menu-btn {
-		position: absolute;
-		top: 40px;
-		right: 40px;
-		
-	}
-	
-	#chk:checked ~ .menu {
-		right: 0;
-	}
 	
 	.section-desc h2 {
 		
@@ -462,7 +499,7 @@ input:hover, textarea:hover {
 		color: var(--light);
 		margin: auto;
 		text-align: center;
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 	}
 	
 }
