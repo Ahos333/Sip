@@ -33,8 +33,8 @@
 }
 
 .show-menu-btn, .hide-menu-btn {
-		display: block;
-	}
+	display: block;
+}
 	
 	.menu {
 		position: fixed;
@@ -84,7 +84,6 @@
 	cursor: pointer;
 	/* display: none;*/
 	
-	
 }
 
 .show-menu-btn {
@@ -123,7 +122,8 @@ section {
 }
 
 .section-title h1 {
-	margin: 1rem 0;
+	display: block;
+	margin: 1.5rem 0;
 	text-transform: uppercase;
 	text-weight: bold;
 	font-size: 
@@ -186,20 +186,20 @@ section {
 }
 
 /* Browse Section */
-.swiper-container {
+.s1 {
    width: 100vw;
-   padding-top: 50px;
-   padding-bottom: 50px;
+	margin: 1.5rem 0;
+   padding: 2.5rem 0;
 }
 
-.swiper-slide {
+.s1 .swiper-wrapper .swiper-slide {
    background-position: center;
    background-size: cover;
    width: 300px;
    height: 300px;
 }
 
-.swiper-slide h3 {
+.s1 .swiper-wrapper .swiper-slide h3 {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -217,7 +217,7 @@ section {
 }
 
 .ad-left, .ad-right {
-
+	margin: 0 auto;
 }
 
 .ad-left img, .ad-right img {
@@ -228,6 +228,10 @@ section {
 
 .ad-img {
 	clip-path: polygon(18% 100%, 82% 100%, 100% 0, 0 0);
+}
+
+.ad-left h3, .ad-right h3 {
+	max-width: 10ch;
 }
 
 /* About Us Section */
@@ -242,6 +246,7 @@ section {
 	height: 300px;
 	border-radius: 0.6rem;
 	background: url('../img/about-us.jpg') no-repeat center center/cover;
+	box-shadow: 0.6rem 0.6rem 0.3rem var(--tertiary);
 	margin: auto;
 	
 }
@@ -253,7 +258,8 @@ section {
 }
 
 .about-desc p {
-	font-size: 1rem;
+	
+	align-self: center;
 	text-align: left;
 	line-height: 1.5rem;
 	text-indent: 0.5rem;
@@ -282,26 +288,100 @@ section {
 .team-member img {
 	width: 70%;
 	height: 30%;
-	box-shadow: 5px 10px var(--tertiary);
+	box-shadow: 10px 10px 5px var(--tertiary);
+}
+
+/* Reviews Section */
+.reviews-section {
+	
+}
+
+.review-container, review-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.review-wrapper {
+	border: 1px solid red;
+}
+
+.review-item {
+	align-items: flex-start;
+	margin: 0.5rem;
+	border: 1px solid yellow;
+}
+
+.review-item:nth-child(odd) {
+	float: right;
+}
+
+.review-item img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.quote {
+	padding: 2rem;
+	background-color: var(--secondary);
+	box-shadow: 1rem 1rem 0.6rem var(--tertiary);
+}
+
+.quote:nth-child(odd) {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 50% 75%, 0% 75%);
+}
+
+.quote:nth-child(even) {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 
-/* Reviews Section 
-.swiper-container2 {
+.quote blockquote {
+	text-align: center;
+	max-width: 15ch;
+}
+
+.quote h3 {
+	text-align: right;
+}
+
+
+/* <div class="review-container">
+			<div class="review-item">
+				<blockquote>Amazing customer service, supportive staff, and the cheapest prices around</blockquote>
+				<h3>&mdash; Jeremy Keith</h3>
+			</div>
+			<div class="review-item">
+				<blockquote>Amazing customer service, supportive staff, and the cheapest prices around</blockquote>
+				<h3>&mdash; Jeremy Keith</h3>
+			</div>
+			<div class="review-item">
+				<blockquote>Amazing customer service, supportive staff, and the cheapest prices around</blockquote>
+				<h3>&mdash; Jeremy Keith</h3>
+			</div>
+		</div> */
+
+.s2 {
    width: 300px;
    height: 300px;
+/*  
    position: absolute;
    left: 50%;
-   top: 50%;
 	margin-left: -150px;
-   margin-top: -150px;
+   margin-top: 100px;
+*/
+	margin: auto;
 }
 
-.swiper-slide2 {
+.s2 .swiper-slide {
 	background-position: center;
    background-size: cover;
 }
-*/
+
+
+.s2 .s2-pagination {
+	background-color: var(--tertiary);
+}
 
 /* Contact Section */
 /* Contact Form */
@@ -397,6 +477,10 @@ input:hover, textarea:hover {
 .contact {
 	display: flex;
 	justify-content: center;
+}
+
+.email, .main-text, .newsletter-btn {
+	margin-right: 0.3rem;
 }
 
 .contact label {
@@ -501,5 +585,4 @@ input:hover, textarea:hover {
 		text-align: center;
 		font-size: 0.7rem;
 	}
-	
 }
