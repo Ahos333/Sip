@@ -117,8 +117,9 @@
 }
 
 /* Hero Section */
-section {
-	padding: 1rem 0.5rem;
+.section-title {
+	display: block;
+	margin-bottom: 0.5rem;
 }
 
 .section-title h1 {
@@ -126,7 +127,6 @@ section {
 	margin: 1.5rem 0;
 	text-transform: uppercase;
 	text-weight: bold;
-	font-size: 
 }
 
 .section-desc {
@@ -177,7 +177,7 @@ section {
 .cta-btn {
 	position: absolute;
 	left: 25%;
-	bottom: 36%;
+	bottom: 25%;
 	text-transform: uppercase;
 	background-color: var(--tertiary);
 	padding: 0.3rem;
@@ -213,7 +213,7 @@ section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: auto;
+	margin: 3rem auto;
 }
 
 .ad-left, .ad-right {
@@ -242,28 +242,29 @@ section {
 }
 
 .about-img {
-	width: 90%;
+	width: 50%;
 	height: 300px;
 	border-radius: 0.6rem;
-	background: url('../img/about-us.jpg') no-repeat center center/cover;
-	box-shadow: 0.6rem 0.6rem 0.3rem var(--tertiary);
 	margin: auto;
-	
+}
+
+.about-container img {
+	box-shadow: 1rem 1rem 1.5rem   var(--tertiary);
 }
 
 .about-desc {
 	max-width: 35ch;
 	margin-left: 1rem;
 	margin-right: 0;
+	display: flex;
 }
 
-.about-desc p {
-	
+.about-desc h3 {
 	align-self: center;
 	text-align: left;
 	line-height: 1.5rem;
 	text-indent: 0.5rem;
-	margin-bottom: 1.5rem;
+	/*margin-bottom: 1.5rem;*/
 }
 
 /* Our Team Section */
@@ -279,10 +280,10 @@ section {
 .team-member {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	margin-right: 0.5rem;
-	border-radius: 0.3rem;
+	border-radius: 0.6rem;
 }
 
 .team-member img {
@@ -306,13 +307,15 @@ section {
 }
 
 .review-item {
+	height: 100%;
 	align-items: flex-start;
 	margin: 0.5rem;
 	border: 1px solid yellow;
 }
 
-.review-item:nth-child(odd) {
-	float: right;
+.review-item:nth-child(even) {
+	display: flex;
+	flex-direction: reverse-column;
 }
 
 .review-item img {
@@ -321,27 +324,40 @@ section {
 	border-radius: 50%;
 }
 
+.review-item img {
+	float:left;
+}
+
 .quote {
-	padding: 2rem;
+	width: 250px;
+	height: 250px;
+	padding: 0.5rem;
 	background-color: var(--secondary);
-	box-shadow: 1rem 1rem 0.6rem var(--tertiary);
 }
 
-.quote:nth-child(odd) {
+.q1, .q3 {
+	float: right;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 33% 100%, 35% 75%, 0% 75%);
+}
+
+.q2 {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 100% 90%, 50% 75%, 0% 75%);
+}
+
+/*  
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 65% 100%, 50% 75%, 0% 75%);
+
 	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 50% 75%, 0% 75%);
-}
-
-.quote:nth-child(even) {
-	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-}
-
+*/
 
 .quote blockquote {
 	text-align: center;
+	margin: 0 auto;
 	max-width: 15ch;
 }
 
 .quote h3 {
+	margin-top: 0.3rem;
 	text-align: right;
 }
 
@@ -472,6 +488,7 @@ input:hover, textarea:hover {
 /* NewsLetter */
 .newsletter {
 	margin-top: 1rem;
+	margin-left: 1rem;
 }
 
 .contact {
@@ -479,8 +496,16 @@ input:hover, textarea:hover {
 	justify-content: center;
 }
 
-.email, .main-text, .newsletter-btn {
-	margin-right: 0.3rem;
+.contact-title {
+	padding: 1.5rem;
+}
+
+.main-text, .newsletter-btn {
+	margin-right: 0.5rem;
+}
+
+.email {
+	amrgin-right: 0.3rem;
 }
 
 .contact label {
@@ -585,4 +610,5 @@ input:hover, textarea:hover {
 		text-align: center;
 		font-size: 0.7rem;
 	}
+	
 }
