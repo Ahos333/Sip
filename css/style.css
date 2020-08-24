@@ -2,7 +2,7 @@
 .header {
 	height: 70px;
 	padding: 0 20px;
-	background: #000000;
+	background-color: #000000;
 }
 
 .logo {
@@ -52,8 +52,9 @@
 	
 	.menu-link {
 		display: block;
-		padding: 20px;
+		padding: 0.5rem;
 		color: var(--light);
+		overflow: hidden;
 	}
 	
 	.hide-menu-btn {
@@ -73,7 +74,7 @@
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	margin-bottom: 30px;
-	padding: 0 10px 10px 10px;
+	padding: 0 10px 5px 10px;
 	transition: all 0.4s ease;
 	color: #fff;
 }
@@ -302,7 +303,7 @@
 }
 
 .review-wrapper {
-	border: 1px solid red;
+	
 }
 
 .review-item {
@@ -337,7 +338,7 @@
 }
 
 .review-item img {
-	border: 1px solid blue;
+	
 }
 
 .quote {
@@ -566,9 +567,47 @@ input:hover, textarea:hover {
 		text-align: center;
 	}
 	
+	/* Hero Section */
+	.section-desc img {
+	width: 100%;
+	height: 700px;
+	margin-left: 0;
+	margin-bottom: 1.5rem;
+	}
+
+	.cta-btn {
+		position: static;
+		margin: 3rem auto;
+	}
+	
+	/* Browse */
+	.s1 {
+   width: 90vw;
+	margin: 1.5rem 0;
+   padding: 2.5rem 0;
+	}
+
+.s1 .swiper-wrapper .swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 250px;
+   height: 250px;
+	}
+
+.s1 .swiper-wrapper .swiper-slide h3 {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background: var(--dark);
+	
+	}
+	
 	.section-desc, .ads-section, .about-container, .about-desc, .review-item, .contact-section {
 		flex-direction: column;	
 	}
+	
+	/* Our Purpose */
+	
 	
 	/* About Section */
 	.about-desc {
