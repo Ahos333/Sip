@@ -36,37 +36,36 @@
 	display: block;
 }
 	
-	.menu {
-		position: fixed;
-		width: 300px;
-		height: 500px;
-		background-color: var(--overlay);
-		right: -100%;
-		top: 0;
-		text-align: center;
-		padding: 80px 0;
-		line-height: normal;
-		transition: all 0.3s ease-in;
-		z-index: 111;
-	}
+.menu {
+	position: fixed;
+	width: 300px;
+	height: 500px;
+	background-color: var(--overlay);
+	right: -100%;
+	top: 0;
+	text-align: center;
+	padding: 80px 0;
+	line-height: normal;
+	transition: all 0.3s ease-in;
+	z-index: 111;
+}
 	
-	.menu-link {
-		display: block;
-		padding: 0.5rem;
-		color: var(--light);
-		overflow: hidden;
-	}
+.menu-link {
+	display: block;
+	padding: 0.5rem;
+	color: var(--light);
+	overflow: hidden;
+}
 	
-	.hide-menu-btn {
-		position: absolute;
-		top: 40px;
-		right: 40px;
-		
-	}
+.hide-menu-btn {
+	position: absolute;
+	top: 40px;
+	right: 40px;	
+}
 	
-	#chk:checked ~ .menu {
-		right: 0;
-	}
+#chk:checked ~ .menu {
+	right: 0;
+}
 	
 
 .menu-link {
@@ -83,8 +82,7 @@
 	transition: all 0.4s ease-in;
 	font-size: 1.7rem;
 	cursor: pointer;
-	/* display: none;*/
-	
+	/* display: none;*/	
 }
 
 .show-menu-btn {
@@ -172,6 +170,9 @@
 	outline: none;
 	border: none;
 	border-radius: 0.3rem;
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .btn a {
@@ -182,13 +183,11 @@
 
 .btn:hover {
 	transition: 0.3s all ease-in;
-	opacity: 0.9;
+	opacity: 0.5;
 }
 
 .cta-btn {
 	margin: 1rem auto;
-	text-transform: uppercase;
-	background-color: var(--tertiary);
 	padding: 0.3rem;
 	text-decoration: none;
 	text-align: center;
@@ -272,9 +271,9 @@
 
 .about-desc h3 {
 	align-self: center;
-	text-align: left;
-	line-height: 1.5rem;
-	text-indent: 0.5rem;
+	text-align: center;
+	line-height: 1.7rem;
+	font-size: 1.3rem;
 }
 
 /* Our Team Section */
@@ -410,11 +409,15 @@
 	display: flex;
 	width: 90%;
 	margin-right: 0;
-	border: 1px sold green;
+	border: 1px solid green;
+}
+
+.contact-us {
+	width: 100%;
 }
 
 .contact-form, .newsletter {
-	border: 1px sold green;
+	border: 1px solid green;
 }
 
 .contact-form {
@@ -438,25 +441,26 @@
 
 input[type=text] {
 	padding: 0.6rem;
-	width: 100%;
+	width: 50%;
 	height: 30px;
-	background-color: #f4f4f4;
-	outline: none;
-	border: none;
-	border-radius: 0.2rem;
 }
 
 textarea {
 	height: 100px;
 	margin: 0.5rem 0 1rem 0;
-	outline: none;
-	border: none;
 	padding: 0.5rem;
 }
 
 textarea[type=text] {
 	padding-left: 1.3rem;
 	font-size: 1.7rem;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+	border-radius: 0.3rem;
+	background-color: var(--primary);
 }
 
 input:hover, textarea:hover {
@@ -468,14 +472,7 @@ input:hover, textarea:hover {
 	width: 70%;
 	margin: auto;
 	text-align: center;
-	color: #fff;
-	padding-right: 0.3rem;
-	border: 1px solid #fff;
-}
-
-.send-btn:hover {
-	background-color: #fff;
-	color: #000;
+	padding-bottom-right: 0.3rem;
 }
 
 .contact-info {
@@ -491,30 +488,20 @@ input:hover, textarea:hover {
 }
 
 /* NewsLetter */
+
 .newsletter {
-	margin-top: 1rem;
-	margin-left: 1rem;
+	margin-left: 1.5rem;
 }
 
 .contact {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
-.contact-title {
-	margin: auto;
-}
-
-.main-text, .newsletter-btn {
-	margin-right: 0.5rem;
-}
-
-.email {
-	margin-right: 0.3rem;
-}
-
-.contact label {
-	margin-right: 0.3rem;
+.nl-title {
+	margin: 1rem auto;
 }
 
 .contact input {
@@ -526,7 +513,6 @@ input:hover, textarea:hover {
 	width: 250px;
 	height: 30px;
 	padding: 0.5rem;
-	background-color: #f4f4f4;
 }
 
 .contact input[type=text]:hover {
@@ -534,15 +520,11 @@ input:hover, textarea:hover {
 }
 
 .newsletter-btn {
-	width: 50px;
+	width: 60px;
 	height: 30px;
-	padding: 0.3rem;
-	background-color: var(--tertiary);
-	margin-left: 0.3rem;
-}
-
-.newsletter-btn a {
-	color: #fff;
+	padding: 0.2rem 0.3rem 0.5rem 0.25rem;
+	margin-left: 0.5rem;
+	
 }
 
 .back-to-top {
