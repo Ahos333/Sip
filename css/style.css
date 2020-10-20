@@ -409,7 +409,7 @@
 	display: flex;
 	width: 90%;
 	margin-right: 0;
-	border: 1px solid green;
+
 }
 
 .contact-us {
@@ -417,7 +417,7 @@
 }
 
 .contact-form, .newsletter {
-	border: 1px solid green;
+	
 }
 
 .contact-form {
